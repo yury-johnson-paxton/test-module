@@ -23,11 +23,11 @@ jobs:
           working-directory: ./Doxygen # default is .
           # Generate latex documentatio
       - name: Create .nojekyll
-        run: touch $ ./Doxyout/.nojekyll
+        run: touch $ ./DoxyOut/.nojekyll
         shell: bash
       - name: Deploy to GitHub Pages
         uses: JamesIves/github-pages-deploy-action@3.7.1
         with:
           github_token: ${{ github.token }}
           branch: docs
-          folder: ./Doxyout
+          folder: ./DoxyOut
