@@ -1,0 +1,39 @@
+name: Doxygen GitHub Pages Deploy Action
+
+on:
+  push:
+    branches:
+      - main
+  workflow_dispatch:
+
+jobs:
+  deploy:
+    runs-on: ubuntu-latest
+    steps:
+      - name: Install Graphviz
+        # You may pin to the exact commit or the version.
+        # uses: tlylt/install-graphviz@b2201200d85f06f0189cb74d9b69208504cf12cd
+        uses: tlylt/install-graphviz@v1.0.0
+        
+        
+      - name: Checkout repository
+        uses: actions/checkout@v2
+      - name: Doxygen Action
+        # You may pin to the exact commit or the version.
+        # uses: mattnotmitt/doxygen-action@411df0c62acb5b96b8a93d93a7bf4b753c47ea05
+        uses: mattnotmitt/doxygen-action@1.9.5
+        with:
+          # Path to Doxyfile
+          doxyfile-path: ./Doxyfile # default is ./Doxyfile
+          # Working directory
+          working-directory: ./Doxygen # default is .
+          # Generate latex documentatio
+      - name: Create .nojekyll
+        run: sudo touch ./DoxyOut/html/.nojekyll
+        shell: bash
+      - name: Deploy to GitHub Pages
+        uses: JamesIves/github-pages-deploy-action@3.7.1
+        with:
+          github_token: ${{ github.token }}
+          branch: docs
+          folder: ./DoxyOut/html
