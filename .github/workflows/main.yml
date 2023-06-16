@@ -14,10 +14,11 @@ jobs:
         # You may pin to the exact commit or the version.
         # uses: tlylt/install-graphviz@b2201200d85f06f0189cb74d9b69208504cf12cd
         uses: tlylt/install-graphviz@v1.0.0
-      - name: Setup Java
+        
+      - name: PlantUML Action
         # You may pin to the exact commit or the version.
-        # uses: Fleshgrinder/setup-java@da5229ba146b252e0b14db4f3724f7f1f846bf66
-        uses: Fleshgrinder/setup-java@1.0.0
+        # uses: Timmy/plantuml-action@7f13564d11998fd03be650da0faaa310df37932c
+        uses: Timmy/plantuml-action@v1
         
       - name: Checkout repository
         uses: actions/checkout@v2
