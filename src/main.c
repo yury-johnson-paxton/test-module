@@ -32,6 +32,14 @@
     }
     \enddot
  * 
+    \startuml
+        Alice -> Bob: Authentication Request
+        Bob -> RequestHandler: validated Authenticated Request
+        RequestHandler --> Bob: Authenticated Response (OK)
+        Bob --> Alice: Authentication Response (OK)
+    \enduml
+
+
  */
 void main(){
     printf("hello world");
