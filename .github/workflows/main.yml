@@ -18,11 +18,8 @@ jobs:
       - name: Checkout repository
         uses: actions/checkout@v2
         
-      - name: Install xmllint
-        run: 
-          sudo apt install default-jre
-          sudo apt install openjdk-11-jre-headless
-          sudo apt install openjdk-8-jre-headless
+      - name: Install Java
+        run: sudo apt install default-jre
       
       - name: Doxygen Action
         # You may pin to the exact commit or the version.
