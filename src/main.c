@@ -1,4 +1,6 @@
+#include<stdio.h>
+
 void main(){
-    // hello world
+    printf("hello world");
     return;
 };
