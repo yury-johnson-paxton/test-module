@@ -1,0 +1,6 @@
+@startuml inline_umlgraph_1.png
+     Alice -> Bob: Authentication Request
+     Bob -> RequestHandler: validated Authenticated Request
+     RequestHandler --> Bob: Authenticated Response (OK)
+     Bob --> Alice: Authentication Response (OK)
+@enduml
