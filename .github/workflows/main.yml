@@ -18,8 +18,10 @@ jobs:
       - name: Checkout repository
         uses: actions/checkout@v2
         
-      - name: Install Java
-        run: sudo apt install default-jre
+      - name: Setup Java
+        # You may pin to the exact commit or the version.
+        # uses: Fleshgrinder/setup-java@da5229ba146b252e0b14db4f3724f7f1f846bf66
+        uses: Fleshgrinder/setup-java@1.0.0
       
       - name: Doxygen Action
         # You may pin to the exact commit or the version.
