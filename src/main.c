@@ -41,6 +41,15 @@
 
 
  */
+
+
+/**
+ * @brief main
+ * 	Application entry point.
+ * @return
+ * 	Zero upon application failure
+ * \bug no ! in hello world!
+ */
 void main(){
     printf("hello world");
     return;
