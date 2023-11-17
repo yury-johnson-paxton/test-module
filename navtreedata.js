@@ -26,6 +26,8 @@ var NAVTREE =
 [
   [ "SVN Migration Utility", "index.html", [
     [ "Test", "index.html", null ],
+    [ "Todo List", "todo.html", null ],
+    [ "Bug List", "bug.html", null ],
     [ "Files", "files.html", [
       [ "File List", "files.html", "files_dup" ],
       [ "File Members", "globals.html", [
@@ -38,7 +40,7 @@ var NAVTREE =
 
 var NAVTREEINDEX =
 [
-"dir_68267d1309a1af8e8297ef4c3efbcdba.html"
+"bug.html"
 ];
 
 var SYNCONMSG = 'click to disable panel synchronisation';
