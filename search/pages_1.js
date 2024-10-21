@@ -1,5 +1,4 @@
 var searchData=
 [
-  ['test_10',['Test',['../index.html',1,'']]],
-  ['todo_20list_11',['Todo List',['../todo.html',1,'']]]
+  ['doxygen_20auto_20generation_10',['Doxygen auto generation',['../index.html',1,'']]]
 ];

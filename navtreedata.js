@@ -25,7 +25,9 @@
 var NAVTREE =
 [
   [ "SVN Migration Utility", "index.html", [
-    [ "Test", "index.html", null ],
+    [ "Doxygen auto generation", "index.html", [
+      [ "Example of doxygen comments", "index.html#autotoc_md0", null ]
+    ] ],
     [ "Todo List", "todo.html", null ],
     [ "Bug List", "bug.html", null ],
     [ "Files", "files.html", [
