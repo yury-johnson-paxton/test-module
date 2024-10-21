@@ -12,4 +12,12 @@ of improvement with little work.
 
 ## Example of doxygen comments
 
+Code Example:
+```C
+/*
+  \todo Something that needs to be done
+*/
+```
+Output:
+
 \todo Something that needs to be done
